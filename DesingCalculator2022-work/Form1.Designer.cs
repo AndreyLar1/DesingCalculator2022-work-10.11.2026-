@@ -115,6 +115,7 @@
             this.BtnRavno.TabIndex = 19;
             this.BtnRavno.Text = "=";
             this.BtnRavno.UseVisualStyleBackColor = true;
+            this.BtnRavno.Click += new System.EventHandler(this.Btn_ravno_click);
             // 
             // BtnTochka
             // 
@@ -123,8 +124,9 @@
             this.BtnTochka.Name = "BtnTochka";
             this.BtnTochka.Size = new System.Drawing.Size(193, 74);
             this.BtnTochka.TabIndex = 18;
-            this.BtnTochka.Text = ".";
+            this.BtnTochka.Text = ",";
             this.BtnTochka.UseVisualStyleBackColor = true;
+            this.BtnTochka.Click += new System.EventHandler(this.BtnTochka_Click);
             // 
             // Btn0
             // 
@@ -146,6 +148,7 @@
             this.BtnPlusMinus.TabIndex = 16;
             this.BtnPlusMinus.Text = "±";
             this.BtnPlusMinus.UseVisualStyleBackColor = true;
+            this.BtnPlusMinus.Click += new System.EventHandler(this.BtnPlusMinus_Click);
             // 
             // BtnPlus
             // 
@@ -156,6 +159,7 @@
             this.BtnPlus.TabIndex = 15;
             this.BtnPlus.Text = "+";
             this.BtnPlus.UseVisualStyleBackColor = true;
+            this.BtnPlus.Click += new System.EventHandler(this.BtnOperation_Click);
             // 
             // Btn3
             // 
@@ -199,6 +203,7 @@
             this.BtnMinus.TabIndex = 11;
             this.BtnMinus.Text = "-";
             this.BtnMinus.UseVisualStyleBackColor = true;
+            this.BtnMinus.Click += new System.EventHandler(this.BtnOperation_Click);
             // 
             // Btn6
             // 
@@ -242,6 +247,7 @@
             this.BtnYmnochit.TabIndex = 7;
             this.BtnYmnochit.Text = "×";
             this.BtnYmnochit.UseVisualStyleBackColor = true;
+            this.BtnYmnochit.Click += new System.EventHandler(this.BtnOperation_Click);
             // 
             // Btn9
             // 
@@ -285,6 +291,7 @@
             this.BtnDelit.TabIndex = 3;
             this.BtnDelit.Text = "÷";
             this.BtnDelit.UseVisualStyleBackColor = true;
+            this.BtnDelit.Click += new System.EventHandler(this.BtnOperation_Click);
             // 
             // BtnSteret
             // 
@@ -295,6 +302,7 @@
             this.BtnSteret.TabIndex = 2;
             this.BtnSteret.Text = "⌫";
             this.BtnSteret.UseVisualStyleBackColor = true;
+            this.BtnSteret.Click += new System.EventHandler(this.BtnSteret_Click);
             // 
             // BtnC
             // 
@@ -305,6 +313,7 @@
             this.BtnC.TabIndex = 1;
             this.BtnC.Text = "C";
             this.BtnC.UseVisualStyleBackColor = true;
+            this.BtnC.Click += new System.EventHandler(this.BtnC_Click);
             // 
             // BtnCE
             // 
@@ -315,6 +324,7 @@
             this.BtnCE.TabIndex = 0;
             this.BtnCE.Text = "CE";
             this.BtnCE.UseVisualStyleBackColor = true;
+            this.BtnCE.Click += new System.EventHandler(this.BtnCE_Click);
             // 
             // Form1
             // 
@@ -325,6 +335,7 @@
             this.Controls.Add(this.txtDisplay);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Click += new System.EventHandler(this.BtnOperation_Click);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
